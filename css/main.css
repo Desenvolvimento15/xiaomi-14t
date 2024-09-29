@@ -28,7 +28,7 @@
     }
 
     main.container{
-    max-width: 100%;
+    max-width: 1440px;
     background-color: #fff;
     background-position-y: center;
     background-repeat: repeat-y;
@@ -65,6 +65,9 @@
 
     .spacing{padding: 0.1rem;}
 
+
+
+
     /***************************** Roots Color ******************************************/
 
     :root{
@@ -88,6 +91,7 @@
     /***************************** Img ******************************************/
 
     img {vertical-align: middle; border-style: none;}
+    .video-size{max-width: 100%; height: auto;}
 
     .img-fluid {max-width: 100%; height: auto;}
     .img-mob{display: none;}
@@ -155,12 +159,30 @@
     justify-content: center;
     align-items: center;
     }
-    .grid-two-block{
+
+    .grid-06 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
         display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: 13rem;
+
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        }
+
+    .grid-two-block{
+    display: flex;
     }
 
     .grid-nota{
-        padding: 0.5rem;
+    padding: 0.5rem;
     }
 
     /***************************** Fonts Text ******************************************/
@@ -188,6 +210,22 @@
     font-size: .625rem;
     line-height: 1.2;
     text-align: start;
+    }
+
+
+    .subtitle-orange{
+    font-family: 'Camphor Pro';
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(-135deg, #e73f57, #f3af1d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #fff;
+    font-size: .64453rem;
+    line-height: .71875rem;
+    text-align: start;
+    width: 4.92188rem;
+
     }
 
     .subtitle-bronw {
@@ -324,19 +362,15 @@
     }
 
 
-    /* Estilo responsivo */
-    @media (max-width: 768px) {
-    .slide {
-    min-width: 100%;
-    }
-    }
-
     /***************************** Mobile *************************************/
 
     @media only screen and (max-width: 920px) {
+        main.container{
+           overflow-x: hidden;
+            }
 
-    .spacing{padding: 1rem;}
-
+    .spacing{padding: 0.3rem;}
+    .video-size{max-width: 100%; height: auto;}
 
     .img-desk{display: none;}
     .img-mob{display: block;}
@@ -399,8 +433,30 @@
     justify-content: center;
     align-items: center;
     }
+    .grid-06 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: 13rem;
 
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        }
 
+    .grid-nota{
+    padding: 0.1rem;
+    }
+
+    .slide {
+        min-width: 100%;
+        }
     /***************************** Fonts Text **************************/
 
     .text-title{
@@ -416,6 +472,7 @@
 
     .subtitle {
     font-family: 'Camphor Pro';
+    font-weight: 800;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(135deg, #483c33, #70645a, #ccbeb3);
     -webkit-background-clip: text;
@@ -423,9 +480,25 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: #000;
-    font-size: .625rem;
+    font-size: 0.5rem;
     line-height: 1.2;
     text-align: start;
+    }
+
+
+    .subtitle-orange{
+    font-family: 'Camphor Pro';
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(-135deg, #e73f57, #f3af1d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #fff;
+    font-size: 0.4rem;
+    line-height: 1rem;
+    text-align: start;
+    width: 4.92188rem;
+
     }
 
     .subtitle-bronw {
@@ -449,7 +522,7 @@
 
     .subtitle-left {
     text-align: left;
-    font-size: 0.3rem;
+    font-size: 0.2rem;
     font-weight: 900;
     font-family: 'Camphor Pro', sans-serif;
     position: relative;
@@ -478,7 +551,7 @@
     }
 
     .p-left {
-    font-size: 0.3rem;
+    font-size: 0.1rem;
     text-align: left;
     font-family: 'Camphor Pro', sans-serif;
     position: relative;
