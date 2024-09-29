@@ -159,7 +159,9 @@
         display: flex;
     }
 
-
+    .grid-nota{
+        padding: 0.5rem;
+    }
 
     /***************************** Fonts Text ******************************************/
 
@@ -255,10 +257,10 @@
 
     .notas{
     text-align: left;
-    font-size: 0.1rem;
+    font-weight: 200;
+    font-size: 0.08rem;
     font-family: 'Camphor Pro', sans-serif;
     color: #7d7d7d;
-    line-height: .95833rem;
     text-align: start;
     }
 
