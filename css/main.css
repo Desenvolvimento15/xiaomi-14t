@@ -98,7 +98,7 @@
 
 
     /***************************** Grid ******************************************/
-   
+
     .video-01-grid {
     position: absolute;
     top: -52%;
@@ -134,7 +134,7 @@
     justify-content: center;
     align-content: flex-start;
     }
-    
+
     .grid-title {
     position: absolute;
     top: -52%;
@@ -221,6 +221,42 @@
     justify-content: center;
     margin: 0 auto;
     gap: 0.3rem;
+    }
+    .grid-07{
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: flex-start;
+    width: 60%;
+    height: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    }
+
+
+    .grid-21{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: flex-start;
+    width: 60%;
+    height: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
     }
 
     .grid-two-block{
@@ -388,7 +424,7 @@
     /*****************************************************/
 
 
-    
+
     #slider {
     width: 100%;
     overflow: hidden;
@@ -440,27 +476,27 @@
     .dot.active {transform: scale(1.2); /* Aumenta o tamanho do dot ativo */}
 
     .slider-container03 {
-        width: 100%;
-        height: 100vh; /* Usa a altura total da viewport */
-        overflow: hidden;
-        position: relative;
+    width: 100%;
+    height: 100vh; /* Usa a altura total da viewport */
+    overflow: hidden;
+    position: relative;
     }
-    
+
     .slider03 {
-        display: flex;
-        height: 100%;
-        transition: transform 0.5s ease-in-out;
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
     }
-    
+
     .slide03 {
-        flex: 0 0 100%; /* Cada slide ocupa 100% da largura do contêiner */
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    flex: 0 0 100%; /* Cada slide ocupa 100% da largura do contêiner */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     }
 
 
-    
+
     /***************************** Mobile *************************************/
 
     @media only screen and (max-width: 920px) {
@@ -474,7 +510,7 @@
     .img-size{width: 70%}
     /***************************** Grid ************************************/
     .slide03 {
-        font-size: 1.5rem;
+    font-size: 1.5rem;
     }
     .grid-title {
     position: absolute;
