@@ -28,7 +28,7 @@
     }
 
     main.container{
-    max-width: 1440px;
+    max-width: 100%;
     background-color: #fff;
     background-position-y: center;
     background-repeat: repeat-y;
@@ -66,8 +66,6 @@
     .spacing{padding: 0.1rem;}
 
 
-
-
     /***************************** Roots Color ******************************************/
 
     :root{
@@ -100,7 +98,43 @@
 
 
     /***************************** Grid ******************************************/
+   
+    .video-01-grid {
+    position: absolute;
+    top: -52%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: flex-start;
+    width: 60%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    }
 
+    .video-02-grid{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: flex-start;
+    width: 60%;
+    height: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    }
+    
     .grid-title {
     position: absolute;
     top: -52%;
@@ -134,16 +168,45 @@
     .grid-04 {
     position: absolute;
     right: 0;
-    left: 0;
-    top: 0;
+    left: 190px;
+    top: -80px;
     bottom: 0;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    height: auto;
+    max-width: 33%;
+    height: 16vh;
+
+    align-content: stretch;
+    justify-content: flex-start;
     }
 
     .grid-05 {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0.05rem;
+    }
+
+    .grid-06 {
+    position: absolute;
+    right: 0;
+    left: 20%;
+    top: 24%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 59%;
+    height: 0.9rem;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.3rem;
+    }
+
+    .grid-08 {
     position: absolute;
     right: 0;
     left: 0;
@@ -151,31 +214,14 @@
     bottom: 0;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    height: 13rem;
-    margin: 0 auto;
+    max-width: 67%;
+    height: auto;
     flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 0.3rem;
     }
-
-    .grid-06 {
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        height: 13rem;
-
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        }
 
     .grid-two-block{
     display: flex;
@@ -212,6 +258,19 @@
     text-align: start;
     }
 
+    .subtitle-green{
+    font-family: 'Camphor Pro';
+    font-size: 0.7rem;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(135deg, #c7d27f, #edf1ce, #bcc37a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #000;
+    text-align: start;
+    }
 
     .subtitle-orange{
     font-family: 'Camphor Pro';
@@ -225,7 +284,6 @@
     line-height: .71875rem;
     text-align: start;
     width: 4.92188rem;
-
     }
 
     .subtitle-bronw {
@@ -244,6 +302,21 @@
     font-family: 'Camphor Pro', sans-serif;
     position: relative;
     overflow-wrap: break-word;
+    }
+
+    .subtitle-left-green {
+    text-align: left;
+    font-size: 0.3rem;
+    font-weight: 900;
+    font-family: 'Camphor Pro', sans-serif;
+    position: relative;
+    overflow-wrap: break-word;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(135deg, #c7d27f, #edf1ce, #bcc37a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     }
 
     .subtitle-left {
@@ -266,18 +339,18 @@
     }
 
     .p-center {
-    font-size: 0.3rem;
+    font-size: 0.2rem;
+    font-weight: 300;
     text-align: center;
     font-family: 'Camphor Pro', sans-serif;
     position: relative;
     line-height: 1.3;
     overflow-wrap: break-word;
-    color: #737373;
-    line-height: 1.3;
     }
 
     .p-left {
-    font-size: 0.3rem;
+    font-size: .13rem;
+    font-weight: 200;
     text-align: left;
     font-family: 'Camphor Pro', sans-serif;
     position: relative;
@@ -287,10 +360,14 @@
 
     .info {
     text-align: left;
+    font-weight: 200;
+    color: var(--text-silver);
     line-height: 1.3;
-    font-size: 0.3rem;
+    font-size: 0.1rem;
     font-family: 'Camphor Pro', sans-serif;
-    line-height: 1.5;
+    width: 42%;
+    margin: 0 auto;
+    padding: 0.2rem;
     }
 
     .notas{
@@ -309,6 +386,9 @@
     }
 
     /*****************************************************/
+
+
+    
     #slider {
     width: 100%;
     overflow: hidden;
@@ -357,18 +437,35 @@
     }
 
 
-    .dot.active {
-    transform: scale(1.2); /* Aumenta o tamanho do dot ativo */
+    .dot.active {transform: scale(1.2); /* Aumenta o tamanho do dot ativo */}
+
+    .slider-container03 {
+        width: 100%;
+        height: 100vh; /* Usa a altura total da viewport */
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .slider03 {
+        display: flex;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide03 {
+        flex: 0 0 100%; /* Cada slide ocupa 100% da largura do contêiner */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
 
+    
     /***************************** Mobile *************************************/
 
     @media only screen and (max-width: 920px) {
-        main.container{
-           overflow-x: hidden;
-            }
 
+    main.container{overflow-x: hidden;}
     .spacing{padding: 0.3rem;}
     .video-size{max-width: 100%; height: auto;}
 
@@ -376,7 +473,9 @@
     .img-mob{display: block;}
     .img-size{width: 70%}
     /***************************** Grid ************************************/
-
+    .slide03 {
+        font-size: 1.5rem;
+    }
     .grid-title {
     position: absolute;
     top: -56%;
@@ -417,7 +516,8 @@
     height: auto;
     }
 
-    .grid-05 {
+
+    .grid-06 {
     position: absolute;
     right: 0;
     left: 0;
@@ -427,36 +527,20 @@
     flex-direction: column;
     max-width: 100%;
     height: 13rem;
-    margin: 0 auto;
+
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
     }
-    .grid-06 {
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        height: 13rem;
-
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        }
 
     .grid-nota{
     padding: 0.1rem;
     }
 
     .slide {
-        min-width: 100%;
-        }
+    min-width: 100%;
+    }
     /***************************** Fonts Text **************************/
 
     .text-title{
@@ -540,7 +624,7 @@
     }
 
     .p-center {
-    font-size: 0.3rem;
+    font-size: 0.1rem;
     text-align: center;
     font-family: 'Camphor Pro', sans-serif;
     position: relative;
@@ -551,7 +635,7 @@
     }
 
     .p-left {
-    font-size: 0.1rem;
+    font-size: 5rem;
     text-align: left;
     font-family: 'Camphor Pro', sans-serif;
     position: relative;

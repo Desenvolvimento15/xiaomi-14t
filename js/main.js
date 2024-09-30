@@ -60,3 +60,20 @@ $(document).ready(function() {
     showSlide(currentSlide);
     autoPlay();
   });
+
+  let currentSlide03 = 0;
+  const slides03 = document.querySelectorAll('.slide03');
+  const totalSlides03 = slides03.length;
+  
+  console.log(`Total de slides: ${totalSlides03}`); // Verifica se os slides estão sendo selecionados
+  
+  function showNextSlide03() {
+      currentSlide03 = (currentSlide03 + 1) % totalSlides03;
+      console.log(`Mudando para o slide: ${currentSlide03 + 1}`); // Log do slide atual
+      document.querySelector('.slider03').style.transform = `translateX(-${currentSlide03 * 100}%)`;
+  }
+  
+  // Avança automaticamente a cada 3 segundos
+  setInterval(showNextSlide03, 3000);
+  
+
