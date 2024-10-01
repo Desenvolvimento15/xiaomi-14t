@@ -61,6 +61,10 @@ $(document).ready(function() {
     autoPlay();
   });
 
+
+
+
+  
   let currentSlide03 = 0;
   const slides03 = document.querySelectorAll('.slide03');
   const totalSlides03 = slides03.length;
@@ -76,4 +80,32 @@ $(document).ready(function() {
   // Avança automaticamente a cada 3 segundos
   setInterval(showNextSlide03, 3000);
   
-
+  let slideIndex4 = 1;
+  showSlides4(slideIndex4);
+  
+  // Função para mudar o slide atual
+  function currentSlide4(n) {
+      showSlides4(slideIndex4 = n);
+  }
+  
+  // Função para exibir os slides
+  function showSlides4(n) {
+      let i;
+      let slides = document.getElementsByClassName("slider4-slide");
+      let dots = document.getElementsByClassName("slider4-dot");
+  
+      if (n > slides.length) { slideIndex4 = 1 }
+      if (n < 1) { slideIndex4 = slides.length }
+  
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+  
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+  
+      slides[slideIndex4 - 1].style.display = "block";
+      dots[slideIndex4 - 1].className += " active";
+  }
+  
