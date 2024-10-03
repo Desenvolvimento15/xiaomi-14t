@@ -1,26 +1,27 @@
 !function(e,t){
-    var i = t.documentElement;
-    var main = t.querySelector('main'); 
-    function n(){
-        var t = i.clientWidth,
-            n = t >= 1226 ? t / 10 : 122.6;
-        i.style.fontSize = n + "px", e.rootFontSize = n, e.oriRootFontSize = 256;
-    }
-    
-    if (e.addEventListener("resize", (function(){n()}), !1),
-        e.addEventListener("pageshow", (function(e){e.persisted && n()}), !1),
-        n(),
-        e.devicePixelRatio && e.devicePixelRatio >= 2)
-    {
-        var o = t.createElement("div"),
-            d = t.createElement("main");
-        d.className = "container"; 
-        o.style.border = "0.5px solid transparent";
-        d.appendChild(o);
-        i.appendChild(d);
-        1 === o.offsetHeight && i.classList.add("hairlines");
-        i.removeChild(d);
-    }
+  var i = t.documentElement;
+  var main = t.querySelector('.container-xiaomi-14'); // Alterado para selecionar o elemento com a classe 'container-xiaomi-14'
+  
+  function n(){
+      var t = i.clientWidth,
+          n = t >= 1226 ? t / 10 : 122.6;
+      i.style.fontSize = n + "px", e.rootFontSize = n, e.oriRootFontSize = 256;
+  }
+
+  e.addEventListener("resize", function() { n(); }, !1);
+  e.addEventListener("pageshow", function(e) { e.persisted && n(); }, !1);
+  n();
+
+  if (e.devicePixelRatio && e.devicePixelRatio >= 2) {
+      var o = t.createElement("div"),
+          d = t.createElement("main");
+      d.className = "container-xiaomi-14"; // Mantido o uso da classe 'container-xiaomi-14'
+      o.style.border = "0.5px solid transparent";
+      d.appendChild(o);
+      i.appendChild(d);
+      1 === o.offsetHeight && i.classList.add("hairlines");
+      i.removeChild(d);
+  }
 }(window,document);
 
 
@@ -29,7 +30,7 @@ $(document).ready(function() {
     const $dotsContainer = $('#dots-container');
     const $textItem = $('#text-item');
 
-    const slideTexts = ["Titã Cinza", "Azul Titã", "Azul Titã",];
+    const slideTexts = ["Titã Cinza", "Azul Titã",];
 
     let currentSlide = 0;
 
